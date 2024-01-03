@@ -53,8 +53,12 @@ Libraries to be installed in python are listed in **requirements.txt**
    python manage.py migrate
    ```
 6. Run Server
-   ```
+   ```powershell
    python manage.py runserver
+   ```
+7. Seed Database with random notes and 2 users
+   ```powershell
+   python manage.py seed_db <num_notes>
    ```
 
 ## API Endpoints
@@ -72,7 +76,7 @@ Libraries to be installed in python are listed in **requirements.txt**
 3. **POST** /api/notes/ : Create a new note for the authenticated user.
 4. **PUT**/**PATCH** /api/notes/:id/ : Update an existing note by ID for the authenticated user.
 5. **DELETE** /api/notes/:id/ : Delete a note by ID for the authenticated user.
-6. **POST** /api/notes/:id/share/ : Share a note with another user for the authenticated user.
+6. **POST** /api/notes/:id/share/ : Share a note with another user for the authenticated user. (cannot share note with self)
 7. **GET** /api/notes/search?q=query : Search for notes based on keywords for the authenticated user.
 
 ## Performance
