@@ -61,8 +61,9 @@ Libraries to be installed in python are listed in **requirements.txt**
 
 ### Authentication Endpoints
 
-1. **POST** /api/auth/signup: Create a new user account.
-2. **POST** /api/auth/login: Log in to an existing user account and receive an access token.
+1. **POST** /api/auth/signup/ : Create a new user account.
+2. **POST** /api/auth/login/ : Log in to an existing user account and receive an access token.
+3. **POST** /api/auth/refresh/ : Get new access token after the previous one has been expired
 
 ### Note Endpoints
 
